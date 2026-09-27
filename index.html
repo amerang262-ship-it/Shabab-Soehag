@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>منصة شباب سوهاج</title>
+<meta name="description" content="منصة شباب سوهاج للوظائف والتدريب والفعاليات والأخبار">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand"><span class="logo">ش</span><div><b>منصة شباب سوهاج</b><small>فرص · تدريب · وظائف · فعاليات</small></div></div>
+    <nav>
+      <a href="#home">الرئيسية</a><a href="#jobs">الوظائف</a><a href="#training">التدريب</a>
+      <a href="#events">الفعاليات</a><a href="#news">الأخبار</a>
+    </nav>
+    <div class="actions"><button class="btn ghost" onclick="show('login')">تسجيل الدخول</button><button class="btn" onclick="show('register')">إنشاء حساب</button></div>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="container hero-inner">
+  <div>
+   <span class="pill">منصة رقمية لخدمة شباب سوهاج</span>
+   <h1>كل فرص الشباب في سوهاج<br><span>في مكان واحد</span></h1>
+   <p>ابحث عن وظيفة، دورة تدريبية، فعالية أو فرصة جديدة وسجّل بياناتك في حسابك الشخصي.</p>
+   <button class="btn big" onclick="show('register')">ابدأ الآن ←</button>
+  </div>
+  <div class="hero-card"><div class="circle">شباب<br>سوهاج</div><h3>بوابتك للفرص</h3><p>وظائف • تدريب • فعاليات • أخبار</p></div>
+ </div>
+</section>
+
+<section class="container cards">
+ <article><div class="ico">💼</div><h3>الوظائف</h3><p>وظائف وفرص عمل مناسبة لمؤهلاتك.</p><a href="#jobs">استكشف الوظائف ←</a></article>
+ <article><div class="ico">🎓</div><h3>التدريب والفرص</h3><p>دورات وورش عمل تساعدك على تطوير مهاراتك.</p><a href="#training">استكشف التدريب ←</a></article>
+ <article><div class="ico">📅</div><h3>الفعاليات</h3><p>تابع الأنشطة والفعاليات القادمة.</p><a href="#events">شاهد الفعاليات ←</a></article>
+ <article><div class="ico">📰</div><h3>الأخبار</h3><p>آخر أخبار ومبادرات شباب سوهاج.</p><a href="#news">اقرأ الأخبار ←</a></article>
+</section>
+
+<section class="section container" id="jobs">
+<h2>الوظائف المتاحة</h2><div class="grid">
+<div class="item"><b>مهندس كهرباء</b><span>سوهاج · دوام كامل</span><button class="small" onclick="show('login')">التفاصيل</button></div>
+<div class="item"><b>فني إلكترونيات</b><span>سوهاج · دوام كامل</span><button class="small" onclick="show('login')">التفاصيل</button></div>
+<div class="item"><b>مدخل بيانات</b><span>سوهاج · دوام جزئي</span><button class="small" onclick="show('login')">التفاصيل</button></div>
+</div></section>
+
+<section class="section alt" id="training"><div class="container">
+<h2>التدريب والفرص</h2><div class="grid">
+<div class="item"><b>دورة تدريبية في مجال الإلكترونيات</b><span>مجانية · مركز التدريب</span><button class="small" onclick="show('login')">التسجيل</button></div>
+<div class="item"><b>ورشة مهارات الحاسب الآلي</b><span>مجانية · سوهاج</span><button class="small" onclick="show('login')">التسجيل</button></div>
+</div></div></section>
+
+<section class="section container" id="events"><h2>الفعاليات</h2><div class="grid">
+<div class="item"><b>ملتقى شباب سوهاج</b><span>قاعة المؤتمرات · 10 أكتوبر</span><button class="small" onclick="show('login')">التفاصيل</button></div>
+<div class="item"><b>يوم التوظيف</b><span>مركز الشباب · 18 أكتوبر</span><button class="small" onclick="show('login')">التفاصيل</button></div>
+</div></section>
+
+<section class="section alt" id="news"><div class="container"><h2>آخر الأخبار</h2>
+<div class="news"><div><b>إطلاق منصة شباب سوهاج الرقمية</b><p>تابع أحدث الخدمات والفرص من مكان واحد.</p></div>
+<div><b>إعلانات التدريب والوظائف</b><p>يتم تحديث الفرص والإعلانات بصورة مستمرة.</p></div></div></div></section>
+</main>
+
+<div class="modal" id="modal">
+<div class="modal-box"><button class="close" onclick="hide()">×</button><div id="modalContent"></div></div>
+</div>
+
+<footer><div class="container"><b>منصة شباب سوهاج</b><span>© 2026 جميع الحقوق محفوظة</span></div></footer>
+<script src="script.js"></script>
+</body></html>
